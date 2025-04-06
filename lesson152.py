@@ -19,4 +19,11 @@ print(f'{name} rocks!')
 print('{name} rocks!'.format(name=name))
 print('-'*80)
 
+def outer():
+    name = 'Python'
+    def inner():
+        return f'{name} rocks!'
+    return inner
+print(outer()())
+
 
