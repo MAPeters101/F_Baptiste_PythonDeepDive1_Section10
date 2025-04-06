@@ -41,4 +41,12 @@ print(d1)
 print(d2)
 print('-'*80)
 
+d = {'a':1, 'b':2, 'c':3}
+print('start: ', d)
+d['a'] = d.pop('a')
+print('moved a to end:', d)
+print('-'*80)
+
+
+
 
