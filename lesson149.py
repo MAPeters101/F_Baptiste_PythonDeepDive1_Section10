@@ -63,7 +63,15 @@ d.popitem()
 print('pop last item:', d)
 print('-'*80)
 
+d = {'a':1, 'b':2, 'c':3, 'x':100, 'y':200}
+print('start: ', d)
+key = list(d.keys())[0]
+print(key)
+key = next(iter(d.keys()))
+print(key)
+d.pop(key)
+print('after pop first item:', d)
+print('-'*80)
 
-
-
+"""http://code.activestate.com/recipies/578375/"""
 
