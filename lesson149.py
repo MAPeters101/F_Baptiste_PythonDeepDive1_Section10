@@ -25,6 +25,20 @@ print(d.values())
 print(d.items())
 print()
 
+print(d.items())
+print(d)
+print(d.popitem())
+print(d)
+print('-'*80)
 
+d1 = {'a':1, 'b':200}
+d2 = {'a':100, 'd':300, 'c':400}
+print(d1)
+print(d2)
+print()
+d1.update(d2)
+print(d1)
+print(d2)
+print('-'*80)
 
 
