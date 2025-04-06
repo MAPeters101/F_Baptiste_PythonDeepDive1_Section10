@@ -47,6 +47,17 @@ d['a'] = d.pop('a')
 print('moved a to end:', d)
 print('-'*80)
 
+d = {'a':1, 'b':2, 'c':3, 'x':100, 'y':200}
+print('start: ', d)
+d['c'] = d.pop('c')
+print('moved c to end:', d)
+for i in range(len(d)-1):
+    key = next(iter(d.keys()))
+    d[key] = d.pop(key)
+print('moved c to front:', d)
+print('-'*80)
+
+
 
 
 
