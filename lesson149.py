@@ -57,6 +57,12 @@ for i in range(len(d)-1):
 print('moved c to front:', d)
 print('-'*80)
 
+d = {'a':1, 'b':2, 'c':3, 'x':100, 'y':200}
+print('start: ', d)
+d.popitem()
+print('pop last item:', d)
+print('-'*80)
+
 
 
 
