@@ -12,3 +12,11 @@ print()
 a = 10 / 3
 print(f'{a:0.5f}')
 print(f'{10/3 :0.5f}')
+print('-'*80)
+
+name = 'Python'
+print(f'{name} rocks!')
+print('{name} rocks!'.format(name=name))
+print('-'*80)
+
+
