@@ -25,5 +25,21 @@ def outer():
         return f'{name} rocks!'
     return inner
 print(outer()())
+print('-'*80)
+
+sq = lambda x: x**2
+a = 10
+b = 1
+print(f'{sq(a) if b>5 else a}')
+b = 10
+print(f'{sq(a) if b>5 else a}')
+print('-'*80)
+
+a = 10
+b = 1
+print(f'{(lambda x: x**2)(a) if b>5 else a}')
+b = 10
+print(f'{(lambda x: x**2)(a) if b>5 else a}')
+print('-'*80)
 
 
